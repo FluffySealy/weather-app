@@ -1,0 +1,164 @@
+            html {
+                font-size: calc(62.5% / var(--size-divisor));
+            }
+            
+            body {
+                margin: 0;
+                min-height: 100%;
+                color: white;
+                font-size: 1.4rem;
+                font-family: serif;
+            }
+            
+            .location-search input {
+                position: relative;
+                display: block;
+                margin: 2rem auto;
+                padding: 2rem;
+                background: lightgrey;
+                border-radius: 3rem;
+                font-size: 4rem;
+                color: white;
+                font-family: serif;
+                width: calc(600px / var(--size-divisor));
+            }
+            
+             ::placeholder {
+                color: white;
+                font-family: serif;
+            }
+            
+            .visually-hidden {
+                border: 0;
+                clip: rect(0 0 0 0);
+                height: 1px;
+                margin: -1px;
+                overflow: hidden;
+                padding: 0;
+                position: absolute;
+                width: 1px;
+            }
+            
+            #search-error {
+                color: black;
+            }
+            
+            .weather-container {
+                position: relative;
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 50% 25% 25%;
+                grid-template-areas: "weather-info weather-info weather-graphic weather-graphic" "weather-forecast weather-forecast weather-forecast weather-forecast" "weather-location weather-location weather-location weather-location";
+                align-items: center;
+                width: calc(875.77px / var(--size-divisor));
+                height: calc(875.77px / var(--size-divisor));
+                margin: 20rem auto 4rem auto;
+                padding: 1% 3.5%;
+                background: linear-gradient(to right bottom, #37A2DA, #4168C5);
+                border-radius: 25%;
+                box-shadow: inset 3px 22px 8px rgba(101, 206, 253, 0.46), 0px 44px 76px rgba(59, 101, 137, 0.3);
+                box-sizing: border-box;
+            }
+            
+            #weather-graphic {
+                grid-area: weather-graphic;
+                width: calc(519px/ var(--size-divisor));
+                height: calc(562px/ var(--size-divisor));
+                overflow: visible;
+                transform: translate(-50px, -100px);
+            }
+            
+            .weather-info {
+                grid-area: weather-info;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-weight: bold;
+            }
+            
+            #current-datetime {
+                text-transform: uppercase;
+                font-size: 4rem;
+                letter-spacing: .3rem;
+            }
+            
+            #current-weather {
+                font-size: 7rem;
+            }
+            
+            #current-temp {
+                font-size: 17rem;
+            }
+            
+            .row {
+                grid-area: weather-forecast;
+                display: flex;
+                align-self: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            
+            .col {
+                display: flex;
+                flex: 25%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 3.5rem;
+                font-weight: bold;
+            }
+            
+            .location {
+                grid-area: weather-location;
+                display: flex;
+                justify-content: center;
+                align-self: flex-start;
+                text-transform: uppercase;
+                font-size: 13rem;
+                font-weight: bold;
+            }
+            
+            @media (min-width: 0px) {
+                 :root,
+                html {
+                    --size-divisor: 3.5;
+                }
+                #weather-graphic {
+                    transform: translate(-15px, -40px);
+                }
+            }
+            
+            @media (min-width: 320px) {
+                 :root,
+                html {
+                    --size-divisor: 3;
+                }
+            }
+            
+            @media (min-width: 576px) {
+                 :root,
+                html {
+                    --size-divisor: 2.5;
+                }
+            }
+            
+            @media (min-width: 768px) {
+                 :root,
+                html {
+                    --size-divisor: 1.6;
+                }
+                #weather-graphic {
+                    transform: translate(-25px, -50px);
+                }
+            }
+            
+            @media (min-width: 992px) {
+                 :root,
+                html {
+                    --size-divisor: 1;
+                }
+                #weather-graphic {
+                    transform: translate(-50px, -100px);
+                }
+            }
