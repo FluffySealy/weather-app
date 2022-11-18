@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="weather-graphic">
-        <svg width="100%" height="auto" viewBox="0 0 519.563 562.851"
+        <svg width="100%" height="100%" viewBox="0 0 519.563 562.851"
           aria-labelledby="sun-vector-title sun-vector-desc">
           <title id="sun-vector-title">Sun</title>
           <desc id="sun-vector-desc">an image of a Sun.</desc>
@@ -32,7 +32,7 @@
 
 
           </g>
-        </svg><svg width="100%" height="auto" viewBox="0 0 519.563 562.851" style="opacity: 0.9;"
+        </svg><svg width="100%" height="100%" viewBox="0 0 519.563 562.851" style="opacity: 0.9;"
           aria-labelledby="cloud-vector-title cloud-vector-desc">
           <title id="cloud-vector-title">Cloud</title>
           <desc id="cloud-vector-desc">an image of a cloud.</desc>
@@ -76,7 +76,7 @@
 
           </g>
         </svg>
-        <svg width="100%" height="auto" viewBox="0 0 519.563 562.851"
+        <svg width="100%" height="100%" viewBox="0 0 519.563 562.851"
           aria-labelledby="raindrops-vector-title raindrops-vector-desc">
           <title id="raindrops-vector-title">Raindrops</title>
           <desc id="raindrops-vector-desc">an image of raindrops.</desc>
