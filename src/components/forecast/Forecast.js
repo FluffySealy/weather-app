@@ -11,7 +11,7 @@ function Forecast({ data }) {
   return (
     <div className="row">
       {closeForecast.map((item, idx) => (
-      <ForecastItem data={item} key={item.dt} index={idx}/>
+      <ForecastItem data={item} key={item.dt} index={idx * 3}/>
       ))}
       
     </div>

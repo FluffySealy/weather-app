@@ -1,0 +1,44 @@
+<svg width="100%" height="100%" viewBox="0 0 519.563 562.851" style="opacity: 0.9;"
+          aria-labelledby="cloud-vector-title cloud-vector-desc">
+          <title id="cloud-vector-title">Cloud</title>
+          <desc id="cloud-vector-desc">an image of a cloud.</desc>
+          <defs>
+
+            <radialGradient id="radial-gradient" cx="0.372" cy="0.208" r="0.609"
+              gradientTransform="translate(0 -0.125) scale(1 1.251)" gradientUnits="objectBoundingBox">
+              <stop offset="0" stop-color="#fff"></stop>
+              <stop offset="1" stop-color="#94b2d5"></stop>
+            </radialGradient>
+            <filter id="Cloud" x="0" y="62.743" width="519.563" height="394.51" filterUnits="userSpaceOnUse">
+              <feOffset dy="36" input="SourceAlpha"></feOffset>
+              <feGaussianBlur stdDeviation="16" result="blur-2"></feGaussianBlur>
+              <feFlood flood-color="#002a5c" flood-opacity="0.161"></feFlood>
+              <feComposite operator="in" in2="blur-2"></feComposite>
+              <feComposite in="SourceGraphic"></feComposite>
+            </filter>
+            <filter id="Cloud-2" x="0" y="62.743" width="519.563" height="394.51" filterUnits="userSpaceOnUse">
+              <feOffset dx="1" dy="2" input="SourceAlpha"></feOffset>
+              <feGaussianBlur stdDeviation="7" result="blur-3"></feGaussianBlur>
+              <feFlood flood-color="#fff" result="color-2"></feFlood>
+              <feComposite operator="out" in="SourceGraphic" in2="blur-3"></feComposite>
+              <feComposite operator="in" in="color-2"></feComposite>
+              <feComposite operator="in" in2="SourceGraphic"></feComposite>
+            </filter>
+          </defs>
+          <g id="Component_Cloud" data-name="Component_Cloud" transform="translate(48 8.274)">
+
+            <g data-type="innerShadowGroup">
+              <g transform="matrix(1, 0, 0, 1, -48, -8.27)" filter="url(#Cloud)">
+                <path id="Cloud-3" data-name="Cloud"
+                  d="M70.594,298.51a70.6,70.6,0,0,1-37.17-130.62A149.287,149.287,0,0,1,320.538,94.8c.391,0,.777-.007,1.168-.007a101.857,101.857,0,0,1,1.008,203.709v0Z"
+                  transform="translate(48 74.74)" fill="url(#radial-gradient)"></path>
+              </g>
+              <g transform="matrix(1, 0, 0, 1, -48, -8.27)" filter="url(#Cloud-2)">
+                <path id="Cloud-4" data-name="Cloud"
+                  d="M70.594,298.51a70.6,70.6,0,0,1-37.17-130.62A149.287,149.287,0,0,1,320.538,94.8c.391,0,.777-.007,1.168-.007a101.857,101.857,0,0,1,1.008,203.709v0Z"
+                  transform="translate(48 74.74)" fill="#fff"></path>
+              </g>
+            </g>
+
+          </g>
+        </svg>
